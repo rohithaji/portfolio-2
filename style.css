@@ -1,0 +1,217 @@
+/* Author : Rohith Aji */
+/* Date : 11/2/2025  */
+
+/* Font link  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  font-family: "Roboto", serif; 
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: whitesmoke;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 20px 20px;
+    gap: 20px;
+}
+
+nav ul a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+nav a {
+    color: #FFC107;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color:  #FFC107;
+    color: white;
+    font-weight: bold;
+}
+
+.container{
+    padding: 0 50px;
+    height: 100vh;
+
+}
+
+.profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile h1{
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+
+.profile h1 span{
+    color: #FFC107;
+    font-size: 80px;
+}
+
+.profile p{
+    font-size: 20px;
+    margin: 15px 0
+}
+
+footer{
+    text-align: center;
+    font-size: 25px;
+    background-color: #333; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.card{
+    width: 30%;
+    border: 2px solid;
+    padding: 15px 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container h2{
+    color: crimson;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.card h3{
+    color: indianred;
+}
+
+#skill-heading{
+    color: #c96023;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+.skills{
+    margin-bottom: 50px;
+}
+
+.skills figure {
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .skills img {
+    width: 30vw;
+    height: 20vw;
+    border: 2px solid #ff3d0036;
+    border-radius: 10px;
+    box-shadow: 0.5vw 0.7vw 0.7vw 0px #00000042;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .skills img:hover {
+    filter: grayscale(1);
+    transform: scale(1.03);
+  }
+  
+  .skills figcaption {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+  }
+
+  .contact-form-head h2{
+    color: rgb(0, 133, 145);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+  }
+  .contact-form-head p{
+    color: #333;
+    font-size: 20px;
+    padding: 10px;
+  }
+form {
+    background: #b8d1de;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #908e8e;
+    border-radius: 4px;
+}
+
+button {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.social-media{
+    width: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.social-media img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
