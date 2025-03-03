@@ -10,14 +10,15 @@
 <body>
     <!-- Header starts -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <span class="hamburger" onclick="toggleMenu()">☰</span>
+        <div class="nav-links" id="navLinks">
+            <a href="./index.html">Home</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./skills.html">Skills</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </nav>
     </header>
     <!-- Main content starts here -->
     <main>
@@ -55,5 +56,12 @@
      <footer>
         <p>&copy;2025 Rohith Aji</p>
      </footer>
+      <!-- script  -->
+      <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("show");
+        }
+    </script>
 </body>
 </html>

@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- External link -->
      <link rel="stylesheet" href="./style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <script src="script.js"></script>
      <title>Portfolio</title>
 </head>
 <body>
     <!-- Header starts -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <nav class="navbar">
+            <span class="hamburger" onclick="toggleMenu()">☰</span>
+            <div class="nav-links" id="navLinks">
+                <a href="./index.html">Home</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./skills.html">Skills</a>
+                <a href="./contact.html">Contact</a>
+            </div>
         </nav>
     </header>
     <!-- Main content starts here -->
@@ -46,5 +47,13 @@
      <footer>
         <p>&copy;2025 Rohith Aji</p>
      </footer>
+
+     <!-- script  -->
+     <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("show");
+        }
+    </script>
 </body>
 </html>
